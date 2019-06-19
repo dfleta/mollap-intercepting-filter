@@ -21,8 +21,8 @@ public class ProgramadorTasques {
         getTasques().afegirTasca(tasca);
     }
 
-    public void executarTasques(String peticio) {
-        tasques.execucio(peticio);
+    public void executarTasques(String id) {
+        tasques.execucio(id);
     }
     
 }

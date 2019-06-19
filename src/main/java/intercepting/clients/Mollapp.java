@@ -12,7 +12,7 @@ public class Mollapp implements Client {
     }
 
     @Override
-    public void enviarPeticio(String peticio) {
-        programador.executarTasques(peticio);
+    public void enviarPeticio(String id) {
+        programador.executarTasques(id);
     }
 }
