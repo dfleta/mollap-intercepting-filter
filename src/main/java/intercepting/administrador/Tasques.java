@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import intercepting.filtres.Filtre;
-import intercepting.target.BlockChain;
+import intercepting.target.Target;
 
 public class Tasques {
 
     private List<Filtre> tasques = new ArrayList<>();
 
-    private BlockChain bc;
+    private Target target;
 
     public List<Filtre> getTasques() {
         return this.tasques;
@@ -25,10 +25,10 @@ public class Tasques {
         for (Filtre filtre : tasques) {
             filtre.execucio(peticio);
         }
-        this.bc.execucio(peticio);
+        this.target.execucio(peticio);
     }
     
-    public void setTarget(BlockChain bc){
-        this.bc = bc;
+    public void setTarget(Target target){
+        this.target = target;
     }    
 }

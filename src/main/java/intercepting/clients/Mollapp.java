@@ -2,7 +2,7 @@ package intercepting.clients;
 
 import intercepting.administrador.ProgramadorTasques;
 
-public class Wallet implements Client {
+public class Mollapp implements Client {
 
     private ProgramadorTasques programador = null;
 
@@ -13,6 +13,6 @@ public class Wallet implements Client {
 
     @Override
     public void enviarPeticio(String peticio) {
-        programador.peticioTasques(peticio);
+        programador.executarTasques(peticio);
     }
 }

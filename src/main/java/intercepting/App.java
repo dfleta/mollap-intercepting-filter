@@ -1,21 +1,36 @@
 package intercepting;
 
 import intercepting.administrador.ProgramadorTasques;
-import intercepting.clients.Wallet;
-import intercepting.filtres.Credit;
-import intercepting.target.BlockChain;
+import intercepting.clients.Mollapp;
+import intercepting.filtres.Autoritzacio;
+import intercepting.target.Vehicle;
 import intercepting.filtres.Autenticacio;
 
 public final class App {
-
     public static void main(String[] args) {
 
-        ProgramadorTasques programadorTasques = new ProgramadorTasques(new BlockChain());
-        programadorTasques.setTasca(new Autenticacio());
-        programadorTasques.setTasca(new Credit());
+        /**
+         * Configuració del programador de tasques
+         * del sistema amb el tipus de target triat:
+         * des de vehicles a qualsevol cosa que admiteix
+         * la recepció d'un missatge.
+         */
+        ProgramadorTasques programadorTasques = new ProgramadorTasques(new Vehicle());
 
-        Wallet wallet = new Wallet();
-        wallet.setProgramadorTasques(programadorTasques);
-        wallet.enviarPeticio("transferir BTC");
+        /**
+         * Afegir al sistema les tasques que volem que el sistema
+         * executi al rebre la petició del client.
+         */
+        programadorTasques.setTasca(new Autenticacio());
+        programadorTasques.setTasca(new Autoritzacio());
+
+        /**
+         * Configuració de l'app client per a que
+         * executi les tasques programades i
+         * enviï el misstage al sistema.
+         */
+        Mollapp mollapp = new Mollapp();
+        mollapp.setProgramadorTasques(programadorTasques);
+        mollapp.enviarPeticio("usuari/a: Francesc");
     }
 }
