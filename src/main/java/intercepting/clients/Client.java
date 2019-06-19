@@ -6,5 +6,5 @@ public interface Client {
     
     void setProgramadorTasques(ProgramadorTasques programador);
 
-    void enviarPeticio(String id);
+    void enviarPeticio(String peticio);
 }

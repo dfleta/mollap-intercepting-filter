@@ -2,5 +2,5 @@ package intercepting.filtres;
 
 public interface Filtre {
 
-    void execucio(String peticio);
+    void execucio(String missatge);
 }

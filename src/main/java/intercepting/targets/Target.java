@@ -2,6 +2,6 @@ package intercepting.targets;
 
 public interface Target {
 
-    void execucio(String peticio);
+    void execucio(String missatge);
 
 }

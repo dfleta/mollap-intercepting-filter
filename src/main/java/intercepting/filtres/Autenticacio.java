@@ -3,7 +3,7 @@ package intercepting.filtres;
 public class Autenticacio implements Filtre {
 
     @Override
-    public void execucio(String peticio) {
-        System.out.println("Autenticacio OK per a " + peticio.toString());
+    public void execucio(String id) {
+        System.out.println("Autenticacio OK per a " + id.toString());
     }
 }
