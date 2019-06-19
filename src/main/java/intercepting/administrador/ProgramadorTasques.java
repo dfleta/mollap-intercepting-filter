@@ -24,5 +24,4 @@ public class ProgramadorTasques {
     public void executarTasques(String id) {
         tasques.execucio(id);
     }
-    
 }

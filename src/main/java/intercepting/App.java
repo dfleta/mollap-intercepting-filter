@@ -31,6 +31,6 @@ public final class App {
          */
         Mollapp mollapp = new Mollapp();
         mollapp.setProgramadorTasques(programadorTasques);
-        mollapp.enviarPeticio("usuari/a: Francesc");
+        mollapp.enviarPeticio("Francesc");
     }
 }

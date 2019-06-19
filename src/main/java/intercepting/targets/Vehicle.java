@@ -3,7 +3,7 @@ package intercepting.targets;
 public class Vehicle implements Target {
 
     @Override
-    public void execucio(String peticio) {
-        System.out.println("Porta oberta!");
+    public void execucio(String id) {
+        System.out.println("Porta oberta " + id + "!");
     }
 }
