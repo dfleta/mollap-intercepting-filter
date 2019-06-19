@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import intercepting.filtres.Filtre;
-import intercepting.target.Target;
+import intercepting.targets.Target;
 
 public class Tasques {
 

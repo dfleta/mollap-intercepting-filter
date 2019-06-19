@@ -2,7 +2,7 @@ package intercepting.administrador;
 
 import intercepting.administrador.Tasques;
 import intercepting.filtres.Filtre;
-import intercepting.target.Target;
+import intercepting.targets.Target;
 
 public class ProgramadorTasques {
 

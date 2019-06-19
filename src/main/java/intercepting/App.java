@@ -3,7 +3,7 @@ package intercepting;
 import intercepting.administrador.ProgramadorTasques;
 import intercepting.clients.Mollapp;
 import intercepting.filtres.Autoritzacio;
-import intercepting.target.Vehicle;
+import intercepting.targets.Vehicle;
 import intercepting.filtres.Autenticacio;
 
 public final class App {
