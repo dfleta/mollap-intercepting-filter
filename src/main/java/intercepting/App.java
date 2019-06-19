@@ -1,9 +1,14 @@
 package intercepting;
 
+import intercepting.administrador.ProgramadorTasques;
+import intercepting.clients.Wallet;
+import intercepting.filtres.Credit;
+import intercepting.target.BlockChain;
+import intercepting.filtres.Autenticacio;
+
 public final class App {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
 
         /**
          * Rick es mou per diferents realitats paraleles 
@@ -28,12 +33,12 @@ public final class App {
          * 
          */
 
-        ProgramadorTasques programadorTasques = new ProgramadorTasques(new Target());
+        ProgramadorTasques programadorTasques = new ProgramadorTasques(new BlockChain());
         programadorTasques.setTasca(new Autenticacio());
         programadorTasques.setTasca(new Credit());
 
-        Pistola pistola = new Pistola();
-        pistola.setProgramadorTasques(programadorTasques);
-        pistola.enviarPeticio("nova dimensio");
+        Wallet wallet = new Wallet();
+        wallet.setProgramadorTasques(programadorTasques);
+        wallet.enviarPeticio("transferir BTC");
     }
 }
