@@ -25,10 +25,7 @@ public class Tasques {
     }
 
     public void execucio(String missatge) {
-
-        for (Filtre filtre : tasques) {
-            filtre.execucio(missatge);
-        }
+        getTasques().forEach( item -> item.execucio(missatge));
         getTarget().execucio(missatge);
     }
     
