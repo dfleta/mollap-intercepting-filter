@@ -20,6 +20,10 @@ public class Tasques {
         return this.target;
     }
 
+    public void setTarget(Target target){
+        this.target = target;
+    } 
+
     public void afegirTasca(Filtre filtre){
         getTasques().add(filtre);
     }
@@ -27,9 +31,5 @@ public class Tasques {
     public void execucio(String missatge) {
         getTasques().forEach( item -> item.execucio(missatge));
         getTarget().execucio(missatge);
-    }
-    
-    public void setTarget(Target target){
-        this.target = target;
-    }    
+    }   
 }
