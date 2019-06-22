@@ -6,11 +6,11 @@ import intercepting.targets.Target;
 
 public class ProgramadorTasques {
 
-    private Tasques tasques = null; 
+    private Tasques tasques = null;
 
     public ProgramadorTasques(Target target) {
         tasques = new Tasques();
-        tasques.setTarget(target);     
+        tasques.setTarget(target);
     }
 
     public Tasques getTasques() {
