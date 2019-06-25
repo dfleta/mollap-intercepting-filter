@@ -6,7 +6,7 @@ import intercepting.filtres.Autoritzacio;
 import intercepting.targets.Vehicle;
 import intercepting.filtres.Autenticacio;
 
-public final class Mollap {
+public final class App {
     public static void main(String[] args) {
 
         /**
