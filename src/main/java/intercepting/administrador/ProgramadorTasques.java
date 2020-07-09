@@ -1,6 +1,5 @@
 package intercepting.administrador;
 
-import intercepting.administrador.Tasques;
 import intercepting.filtres.Filtre;
 import intercepting.targets.Target;
 
