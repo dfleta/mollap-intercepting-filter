@@ -26,9 +26,11 @@ Puerta abierta Francesc!
 
 ## Diagrama de clases UML
 
-Construye la aplicación según la arquitectura que se representa en el diagrama de clases UML de la figura que se proporciona en papel. Al final del examen tendrás que añadir nuevos componentes al diagrama. Pon tu nombre y devuélvemela al finalizar el examen.
+Construye la aplicación según la arquitectura que se representa en el diagrama de clases UML de la figura que se proporciona. Al final del examen tendrás que añadir nuevos componentes al diagrama. Pon tu nombre y devuélvemela al finalizar el examen.
 
 Respeta los nombres de todos los componentes, métodos y propiedades que se indican.
+
+![Diagrama de clases UML Intercepting Filter](./diagrama_clases_UML_intercepting_filter.gif)
 
 ## Prepara el proyecto
 
