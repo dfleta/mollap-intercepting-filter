@@ -34,7 +34,7 @@ public class Tasques {
         if (getTarget().isPresent()) {
             getTarget().get().execucio(missatge);
         } else {
-            // target sense afegir al sistema
+            // target sin añedir al sistema
         }
     }
 }
