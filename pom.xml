@@ -4,11 +4,18 @@
     <groupId>org.cifpfbmoll</groupId>
     <artifactId>intercepting-filter</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <url>https://github.com/dfleta/mollap-intercepting-filter.git</url>
+
     <properties>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <jar.version>3.3.0</jar.version>
     </properties>
+
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -18,20 +25,23 @@
         </dependency>
     </dependencies>
     <build>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-checkstyle-plugin</artifactId>
-                    <version>3.0.0</version>
-                </plugin>
-            </plugins>
-        </pluginManagement>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-checkstyle-plugin</artifactId>
-            </plugin>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>${jar.version}</version>
+                <configuration>
+                  <archive>
+                    <manifest>
+                      <addClasspath>true</addClasspath>
+                      <mainClass>intercepting.App</mainClass>
+                    </manifest>
+                    <manifestEntries>
+                      <url>${project.url}</url>
+                    </manifestEntries>
+                  </archive>
+                </configuration>
+              </plugin>
         </plugins>
     </build>
     <reporting>
